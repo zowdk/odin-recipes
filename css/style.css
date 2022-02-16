@@ -10,6 +10,7 @@ body {
   line-height: 1.5;
   min-height: 100vh;
   text-align: center;
+  font-size: 1.1rem;
 }
 
 /* make the images easier to work with */
@@ -31,11 +32,25 @@ picture {
   display: grid;
   gap: var(--gap, 1rem);
 }
-.container {
+.container,
+table {
   /* no touching the edges of the screen */
   padding: 0 2em;
   max-width: 90vw;
   margin: 0 auto;
+}
+table {
+  margin-bottom: 2em;
+  width: 600px;
+  max-width: 600px;
+  font-weight: 500;
+}
+@media (max-width: 635px) {
+  table {
+    display: flex;
+    max-width: 90vw;
+    margin: 0 auto;
+  }
 }
 .description {
   margin-top: 2em;
@@ -58,6 +73,16 @@ ul {
 }
 .ingredient-item {
   font-size: 1.25rem;
+}
+table td {
+  font-size: 1.25rem;
+}
+.accent {
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: #283618;
+  color: #fefae0;
+  font-family: monospace;
 }
 /* layout */
 header {
@@ -84,7 +109,47 @@ header {
 .container-ingredients {
   margin-bottom: 2em;
 }
-.container-steps {
+@media (max-width: 635px) {
+  .container-ingredients {
+    overflow: hidden;
+  }
+}
+/* .container-steps {
   display: grid;
   grid-template-areas: 1fr 1fr 1fr;
+} */
+.container-steps {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  max-width: max-content;
+  padding-left: 5%;
+}
+table tr:nth-child(odd) {
+  background-color: #a4ac86;
+}
+table tr:nth-child(even) {
+  background-color: #e9edc9;
+}
+.accent {
+  max-width: max-content;
+  padding: 0 0.5em;
+  margin: 0 auto;
+}
+.step {
+  background-color: #e9edc9;
+  max-width: 400px;
+  width: 400px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+}
+.step-name {
+  margin-bottom: 0.5em;
+}
+.step-item {
+  max-width: 60ch;
+  margin: 0 auto;
 }
