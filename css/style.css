@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   text-align: center;
   font-size: 1.1rem;
+  background-color: #faedcd;
 }
 
 /* make the images easier to work with */
@@ -148,7 +149,7 @@ table tr:nth-child(even) {
   margin: 0 auto;
 }
 .step {
-  background-color: #e9edc9;
+  background-color: #ffb703;
   max-width: 400px;
   width: 400px;
   margin: 0 auto;
