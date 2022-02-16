@@ -21,7 +21,10 @@ picture {
   display: block;
   margin: 0 auto;
 }
-
+.step-img {
+  width: 100%;
+  max-width: 400px;
+}
 /* utility classes */
 .flex {
   display: flex;
@@ -125,6 +128,13 @@ header {
   margin: 0 auto;
   max-width: max-content;
   padding-left: 5%;
+}
+@media (min-width: 810px) {
+  .container-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+  }
 }
 table tr:nth-child(odd) {
   background-color: #a4ac86;
