@@ -1,0 +1,36 @@
+/* quick resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* set up the body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* make the images easier to work with */
+img,
+picture {
+  max-width: 500px;
+  display: block;
+}
+
+/* utility classes */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+.container {
+  /* no touching the edges of the screen */
+  padding: 0 2em;
+  max-width: 80vw;
+  margin: 0 auto;
+}
