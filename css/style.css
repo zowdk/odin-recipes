@@ -63,7 +63,7 @@ table {
 }
 /* typography */
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 h2 {
   font-size: 2rem;
@@ -90,9 +90,14 @@ table td {
 }
 /* layout */
 header {
-  margin: 2em 0;
+  margin: 0;
+  padding: 1em;
   letter-spacing: 1px;
+  background-color: #540b0e;
+  color: #e09f3e;
+  margin-bottom: 2em;
 }
+
 .recipe-post-thumb {
   background-color: #ffb703;
   max-width: 600px;
@@ -134,7 +139,7 @@ header {
   .container-steps {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1em;
+    grid-column-gap: 2em;
   }
 }
 table tr:nth-child(odd) {
